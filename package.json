@@ -1,0 +1,49 @@
+{
+  "name": "react-componentry",
+  "version": "0.0.1",
+  "description": "this is a comprehensive library of reusable and customizable UI components designed to accelerate the development of React applications",
+  "main": "dist/index.js",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "types/index.d.ts",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "files": [
+    "./src/index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobytudu/react-componentry.git"
+  },
+  "keywords": [
+    "react-componentry",
+    "react",
+    "component",
+    "library"
+  ],
+  "author": "bobytudu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobytudu/react-componentry/issues"
+  },
+  "homepage": "https://github.com/bobytudu/react-componentry#README.md",
+  "devDependencies": {
+    "@types/lodash": "^4.14.200",
+    "@types/react": "^18.2.33",
+    "@types/react-window": "^1.8.7",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.17",
+    "@mui/x-date-pickers": "^6.18.0",
+    "lodash": "^4.17.21",
+    "react-hook-form": "^7.48.2",
+    "react-window": "^1.8.9"
+  }
+}
