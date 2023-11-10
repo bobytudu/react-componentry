@@ -1,4 +1,4 @@
-# react-components:
+# react-componentry:
 ## Modules:- 
 ### Forms   
  A simple and elegant way to create forms with React, React Hook Form and Material UI.

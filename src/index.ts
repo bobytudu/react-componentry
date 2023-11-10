@@ -1,18 +1,37 @@
-import AutoComplete, {
-  AutoCompletePropsTypes,
-} from "./forms/autoComplete/AutoComplete";
-import DatePicker, {
+import {
+  Input,
+  Select,
+  DatePicker,
+  AutoComplete,
+  InputPropsTypes,
+  SelectPropsTypes,
   DatePickerPropsTypes,
-} from "./forms/datepicker/DatePicker";
-import Alert, { AlertPropsTypes } from "./common/Alert";
-import Loader, { LoaderPropsTypes } from "./common/Loader";
-import Input, { InputPropsTypes } from "./forms/input/Input";
-import Select, { SelectPropsTypes } from "./forms/select/Select";
+  AutoCompletePropsTypes,
+} from "./forms";
+import {
+  AuthenticatedRoutes,
+  AuthenticatedRoutesPropsTypes,
+  RouteTypes,
+  RouterPropsTypes,
+} from "./routes";
+import { Alert, Loader, AlertPropsTypes, LoaderPropsTypes } from "./common";
 
-export { DatePicker, AutoComplete, Select, Input, Alert, Loader };
+export {
+  Input,
+  Alert,
+  Select,
+  Loader,
+  DatePicker,
+  AutoComplete,
+  AuthenticatedRoutes,
+};
 export type InputProps = InputPropsTypes;
+export interface Route extends RouteTypes {}
 export interface AlertProps extends AlertPropsTypes {}
 export interface SelectProps extends SelectPropsTypes {}
+export interface RouterProps extends RouterPropsTypes {}
 export interface LoaderProps extends LoaderPropsTypes {}
 export interface DatePickerProps extends DatePickerPropsTypes {}
 export interface AutoCompleteProps extends AutoCompletePropsTypes {}
+export interface AuthenticatedRoutesProps
+  extends AuthenticatedRoutesPropsTypes {}
