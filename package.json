@@ -1,6 +1,6 @@
 {
   "name": "react-componentry",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is a comprehensive library of reusable and customizable UI components designed to accelerate the development of React applications",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/bobytudu/react-componentry/issues"
   },
-  "homepage": "https://github.com/bobytudu/react-componentry#README.md",
+  "homepage": "https://bobytudu.github.io/react-componentry-docs/",
   "devDependencies": {
     "@types/lodash": "^4.14.200",
     "@types/react": "^18.2.33",
