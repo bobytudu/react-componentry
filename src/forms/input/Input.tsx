@@ -16,6 +16,8 @@ export type InputPropsTypes = TextFieldProps & {
   multiline?: boolean;
   disabled?: boolean;
   placeholder?: string;
+  id?: string;
+  showError?: boolean;
 };
 
 const CustomInput = ({
@@ -23,6 +25,7 @@ const CustomInput = ({
   name,
   label,
   sx = {},
+  showError = true,
   inputProps,
   ...rest
 }: InputPropsTypes) => (
@@ -30,7 +33,7 @@ const CustomInput = ({
     control={control}
     name={name}
     render={({ field: { value, onChange }, formState: { errors } }) => (
-      <Box sx={{ width: "100%" }}>
+      <Box sx={{ width: "100%" }} id={rest.id}>
         <Typography
           variant="subtitle1"
           sx={{ mb: 0.6, fontSize: 14, fontWeight: 600 }}
@@ -47,7 +50,7 @@ const CustomInput = ({
           helperText={<>{get(errors, `${name}.message`, "")}</>}
           inputProps={inputProps}
         />
-        {!get(errors, name) && (
+        {showError && !get(errors, name) && (
           <InputLabel sx={{ color: "transparent" }}>
             <>{get(errors, name, "")}</>
           </InputLabel>
